@@ -23,7 +23,7 @@ st.title("📦 Logistics Performance Dashboard")
 # -------------------------------
 # LOAD DATA
 # -------------------------------
-df = pd.read_csv("APL_Logistics.csv", encoding='latin1')
+df = pd.read_csv("APL_Logistics_small.csv", encoding='latin1')
 
 df.columns = df.columns.str.replace(" ", "_")
 
