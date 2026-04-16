@@ -129,7 +129,7 @@ st.markdown("---")
 st.subheader("🗺 Delivery Heatmap")
 
 fig4 = px.scatter_geo(
-    df.sample(2000),
+    df.sample(min(2000, len(df))),
     lat='Latitude',
     lon='Longitude',
     color='Delay_Gap'
